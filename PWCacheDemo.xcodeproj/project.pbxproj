@@ -13,6 +13,9 @@
 		0E88AF781E693C6B0045401A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E88AF761E693C6B0045401A /* Main.storyboard */; };
 		0E88AF7A1E693C6B0045401A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E88AF791E693C6B0045401A /* Assets.xcassets */; };
 		0E88AF7D1E693C6B0045401A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E88AF7B1E693C6B0045401A /* LaunchScreen.storyboard */; };
+		0E88AF881E693F130045401A /* PWCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E88AF871E693F130045401A /* PWCache.m */; };
+		0E88AF8E1E693F540045401A /* PWDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E88AF8D1E693F540045401A /* PWDiskCache.m */; };
+		0E88AF911E693F680045401A /* PWMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E88AF901E693F680045401A /* PWMemoryCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		0E88AF791E693C6B0045401A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E88AF7C1E693C6B0045401A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E88AF7E1E693C6B0045401A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E88AF861E693F130045401A /* PWCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWCache.h; path = PWCache/PWCache.h; sourceTree = "<group>"; };
+		0E88AF871E693F130045401A /* PWCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWCache.m; path = PWCache/PWCache.m; sourceTree = "<group>"; };
+		0E88AF8C1E693F540045401A /* PWDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWDiskCache.h; path = PWCache/PWDiskCache.h; sourceTree = "<group>"; };
+		0E88AF8D1E693F540045401A /* PWDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWDiskCache.m; path = PWCache/PWDiskCache.m; sourceTree = "<group>"; };
+		0E88AF8F1E693F680045401A /* PWMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWMemoryCache.h; path = PWCache/PWMemoryCache.h; sourceTree = "<group>"; };
+		0E88AF901E693F680045401A /* PWMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWMemoryCache.m; path = PWCache/PWMemoryCache.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +51,7 @@
 		0E88AF611E693C6B0045401A = {
 			isa = PBXGroup;
 			children = (
+				0E88AF851E693EF80045401A /* PWCache */,
 				0E88AF6C1E693C6B0045401A /* PWCacheDemo */,
 				0E88AF6B1E693C6B0045401A /* Products */,
 			);
@@ -77,6 +87,19 @@
 				0E88AF6E1E693C6B0045401A /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0E88AF851E693EF80045401A /* PWCache */ = {
+			isa = PBXGroup;
+			children = (
+				0E88AF861E693F130045401A /* PWCache.h */,
+				0E88AF871E693F130045401A /* PWCache.m */,
+				0E88AF8C1E693F540045401A /* PWDiskCache.h */,
+				0E88AF8D1E693F540045401A /* PWDiskCache.m */,
+				0E88AF8F1E693F680045401A /* PWMemoryCache.h */,
+				0E88AF901E693F680045401A /* PWMemoryCache.m */,
+			);
+			name = PWCache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,7 +176,10 @@
 			files = (
 				0E88AF751E693C6B0045401A /* ViewController.m in Sources */,
 				0E88AF721E693C6B0045401A /* AppDelegate.m in Sources */,
+				0E88AF911E693F680045401A /* PWMemoryCache.m in Sources */,
 				0E88AF6F1E693C6B0045401A /* main.m in Sources */,
+				0E88AF8E1E693F540045401A /* PWDiskCache.m in Sources */,
+				0E88AF881E693F130045401A /* PWCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +336,7 @@
 				0E88AF831E693C6B0045401A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
